@@ -11,7 +11,7 @@ class Gokill < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/w31r4/gokill/releases/download/v1.2.8/gokill_Darwin_x86_64.tar.gz"
-      sha256 "14e945778b66f19b1de77c77babf5b0176f5e562e650d22dbeae46bab285da6a"
+      sha256 "00a3885e32cf097c868bb6afe551d31489e70081aaa8a8959fd8614f0d54ba0f"
 
       def install
         bin.install "gokill"
@@ -19,7 +19,7 @@ class Gokill < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/w31r4/gokill/releases/download/v1.2.8/gokill_Darwin_arm64.tar.gz"
-      sha256 "4ebd2aa246562ed43d76a4a9e769fdc2365ad0567017e6877277181d4d934161"
+      sha256 "52b92ec4cb93076299cad887438bf769e52c06c1b722d783486890e2f18e72aa"
 
       def install
         bin.install "gokill"
@@ -30,14 +30,14 @@ class Gokill < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/w31r4/gokill/releases/download/v1.2.8/gokill_Linux_x86_64.tar.gz"
-      sha256 "abe444d4f66739bfc1c79d068ac7d3a3d29ecd5afc1f051bf342a5d81044e3fd"
+      sha256 "4c7a788a3f0f83693976c23162beefade297449970f4ef3bcf0db7b998095a50"
       def install
         bin.install "gokill"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/w31r4/gokill/releases/download/v1.2.8/gokill_Linux_arm64.tar.gz"
-      sha256 "53c325e0f12db8b5b5cae165aaea1611d7f78a8874243eee1543f99d51f50781"
+      sha256 "ea67aa8da725644d4deab7c72bd65883783bc5b901a3b17e9fcae2c219b0165a"
       def install
         bin.install "gokill"
       end
