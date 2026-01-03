@@ -5,21 +5,21 @@
 class Gokill < Formula
   desc "Interactive process killer for Linux and macOS."
   homepage "https://github.com/w31r4/gokill"
-  version "1.3.3"
+  version "1.3.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/w31r4/gokill/releases/download/v1.3.3/gokill_Darwin_x86_64.tar.gz"
-      sha256 "a5d5746b99d6592481fe9cb05ec4b267f78fe58025c2f7a72d633f4fae8ebb93"
+      url "https://github.com/w31r4/gokill/releases/download/v1.3.4/gokill_Darwin_x86_64.tar.gz"
+      sha256 "d6e076b4fc31db00ecad3e44a26b02b1ced0345fe589e2e910b1e7912af88bfc"
 
       def install
         bin.install "gokill"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/w31r4/gokill/releases/download/v1.3.3/gokill_Darwin_arm64.tar.gz"
-      sha256 "1ed9448497053f579697a197421cf117d6c4b01554c5fd787789130b35f1727f"
+      url "https://github.com/w31r4/gokill/releases/download/v1.3.4/gokill_Darwin_arm64.tar.gz"
+      sha256 "6394cc459ede0bf222424623b685834987fb26465099c1886b50248ff52ebc57"
 
       def install
         bin.install "gokill"
@@ -29,15 +29,15 @@ class Gokill < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/w31r4/gokill/releases/download/v1.3.3/gokill_Linux_x86_64.tar.gz"
-      sha256 "3a0b7efd1e308f2a9db5ad752b1227bd08a4abd27b796af8f2fa6ca268d4d22f"
+      url "https://github.com/w31r4/gokill/releases/download/v1.3.4/gokill_Linux_x86_64.tar.gz"
+      sha256 "3ff6ff71573e20e7692bc58e7e7ddbc6daeebb7659d167c35aae16fff5cffb50"
       def install
         bin.install "gokill"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/w31r4/gokill/releases/download/v1.3.3/gokill_Linux_arm64.tar.gz"
-      sha256 "35d116c95557894634d82af1fe0da9ff050a8ea899c5453ac3ecb9cee1f62d04"
+      url "https://github.com/w31r4/gokill/releases/download/v1.3.4/gokill_Linux_arm64.tar.gz"
+      sha256 "b9d87df770f7bbe68b2ac793810a0d8769ad62dbd8563e25fec9691776faeefe"
       def install
         bin.install "gokill"
       end
